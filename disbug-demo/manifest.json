@@ -1,0 +1,27 @@
+{
+    "name":"Demo Launcher",
+    "description":"Quick Launch",
+    "version":"0.10",
+    "manifest_version": 2,
+    "icons":{
+        "16":"./demo.png",
+        "32":"./demo.png",
+        "48":"./demo.png",
+        "128":"./demo.png"
+    },
+    "background": {
+        "scripts":["./background.js"]
+
+    },
+    "options_page":"./option.html",
+    "browser_action": {
+        "default_popup":"popup.html"
+    },
+    "permissions":[
+        "tabs",
+        "https://www.google.com/*",
+        "storage"
+    ]
+
+   
+}

@@ -1,0 +1,37 @@
+{
+   "name":"Chrome Extension Demo",
+   "description":"Demo",
+   "version":"0.1.0",
+   "manifest_version":3,
+   "icons" :{
+       "16":"./demo.png",
+       "32":"./demo.png",
+       "48":"./demo.png",
+       "128":"./demo.png"
+   },
+   "background": {
+       "service_worker":"./background.js"
+
+   },
+   "action": {
+       "default_popup":"./popup.html",
+       "default_icons": {
+        "16":"./demo.png",
+        "32":"./demo.png",
+        "48":"./demo.png",
+        "128":"./demo.png"
+       }
+   },
+
+   "options_page":"./options.html",
+   "permissions": [
+     "activeTab",
+     "tabs",
+     "storage",
+     "scripting"
+   ],
+   "host_permissions": [
+    "https://www.google.com/*"
+   ]
+
+}
